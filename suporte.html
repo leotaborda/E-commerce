@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fim Font -->
+    <link rel="stylesheet" href="css/suporte.css">
+    <title>StarStore</title>
+</head>
+<body>
+    <header style="background-image: url('img/background1.png'); height: 1080px;">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+                <ul class="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="info.html">Informações</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a class="lgn animate-lgn" href="login.html">Login</a></li>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Suporte ao Cliente</h1>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="faq">
+          <h2 class="animate-h2">Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Como faço para solicitar um reembolso?</h3>
+            <div class="para">
+                <p>Para solicitar um reembolso, entre em contato com nosso suporte ao cliente e forneça os detalhes da sua compra.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>Qual é o tempo médio de resposta do suporte?</h3>
+            <div class="para">
+                <p>Nosso tempo médio de resposta é de 24 horas durante os dias úteis.</p>
+            </div>
+          </div>
+        </section>
+      
+        <section id="contact">
+          <h2 class="animate-h2">Entre em Contato</h2>
+          <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="enviar">Enviar</button>
+          </form>
+        </section>
+
+        <section id="helpful-links">
+            <h2 class="animate-h2">Links Úteis</h2>
+            <ul>
+              <button class="link1">Política de Privacidade</button>
+              <dialog id="link1">
+                <h2 class="title-dialog">Política de Privacidade</h2>
+                <p>
+                  <section>
+                    <p class="paragrafo-dialog">A Star Store está comprometida em proteger a privacidade e segurança das informações pessoais dos nossos clientes. Esta política de privacidade descreve como coletamos, usamos e protegemos as informações que você nos fornece quando utiliza nosso website ou faz compras em nossa loja física.</p>
+            
+                    <h2 class="subtitle-dialog">Informações Coletadas</h2>
+                    <p class="paragrafo-dialog">Ao fazer compras na Star Store, podemos coletar informações pessoais, como seu nome, endereço, e-mail, número de telefone e informações de pagamento. Também podemos coletar informações não pessoais, como dados demográficos e preferências de produtos.</p>
+            
+                    <h2 class="subtitle-dialog">Uso das Informações</h2>
+                    <p class="paragrafo-dialog">Utilizamos as informações coletadas para processar pedidos, fornecer suporte ao cliente, personalizar sua experiência de compra e enviar atualizações sobre promoções e novos produtos, caso você tenha optado por receber essas comunicações. Suas informações também podem ser usadas para melhorar nossos produtos e serviços.</p>
+            
+                    <h2 class="subtitle-dialog">Compartilhamento de Informações</h2>
+                    <p class="paragrafo-dialog">A Star Store não compartilha suas informações pessoais com terceiros, exceto quando necessário para processar transações ou cumprir requisitos legais. Podemos compartilhar informações não pessoais, como dados demográficos agregados, com parceiros comerciais para fins de marketing e análise.</p>
+            
+                    <h2 class="subtitle-dialog">Segurança das Informações</h2>
+                    <p class="paragrafo-dialog">Implementamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, uso indevido ou divulgação. Todas as transações de pagamento são processadas por meio de provedores de serviços de pagamento confiáveis, e os dados do cartão de crédito não são armazenados em nossos servidores.</p>
+            
+                    <h2 class="subtitle-dialog">Alterações nesta Política</h2>
+                    <p class="paragrafo-dialog">Esta política de privacidade pode ser atualizada ocasionalmente para refletir mudanças em nossas práticas de coleta e uso de informações. Recomendamos que você revise regularmente esta política para estar ciente de quaisquer atualizações.</p>
+            
+                    <p class="paragrafo-dialog">Ao utilizar o website da Star Store ou fazer compras em nossa loja física, você concorda com os termos desta política de privacidade.</p>
+            
+                    <p class="paragrafo-dialog">Se tiver alguma dúvida sobre esta política ou sobre como suas informações são tratadas, entre em contato conosco através dos canais de comunicação listados em nosso website.</p>
+                </section>
+                </p>
+                <button class="ok">OK!</button>
+              </dialog>
+              <button class="link2">Termos de Serviço</button>
+              <dialog id="link2">
+                <h2 class="title-dialog">Termos de Serviço</h2>
+                <p>
+                  <section>
+                    <h2 class="subtitle-dialog">1. Uso do Website</h2>
+                    <p class="paragrafo-dialog">
+                        1.1 Ao usar o website da Star Store, você concorda em respeitar todas as leis aplicáveis e regulamentos locais, estaduais, nacionais e internacionais.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        1.2 Você concorda em não usar o website de forma fraudulenta, ilegal ou inapropriada, incluindo, mas não se limitando a, hacking, phishing, spamming ou qualquer atividade que viole os direitos de propriedade intelectual da Star Store ou de terceiros.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        1.3 Reservamo-nos o direito de modificar ou descontinuar qualquer parte do website ou dos serviços oferecidos a qualquer momento, sem aviso prévio.
+                    </p>
+                    <h2 class="subtitle-dialog">2. Conta do Cliente</h2>
+                    <p class="paragrafo-dialog">
+                        2.1 Para fazer compras em nosso website, você pode ser solicitado a criar uma conta de cliente. Você é responsável por manter a confidencialidade de suas credenciais de conta e por todas as atividades que ocorrerem em sua conta.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        2.2 Você concorda em fornecer informações precisas, atualizadas e completas ao criar sua conta de cliente e ao fazer compras em nosso website.
+                    </p>
+                    <h2 class="subtitle-dialog">3. Produtos e Pedidos</h2>
+                    <p class="paragrafo-dialog">
+                        3.1 A Star Store se esforça para fornecer informações precisas sobre nossos produtos, incluindo descrições, preços e disponibilidade. No entanto, não podemos garantir que todas as informações sejam totalmente precisas, completas ou atualizadas.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        3.2 Ao fazer um pedido em nosso website, você concorda em fornecer informações precisas de pagamento e envio. Reservamo-nos o direito de recusar ou cancelar pedidos a nosso critério exclusivo, por qualquer motivo.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        3.3 Os preços dos produtos estão sujeitos a alterações sem aviso prévio. Todas as vendas estão sujeitas à nossa política de devolução e reembolso.
+                    </p>
+                    <h2 class="subtitle-dialog">4. Propriedade Intelectual</h2>
+                    <p class="paragrafo-dialog">
+                        4.1 Todos os materiais no website da Star Store, incluindo design, texto, gráficos, logotipos, ícones de botões, imagens, áudio e vídeo, são de propriedade exclusiva da Star Store ou de nossos licenciadores e estão protegidos por leis de direitos autorais e outras leis de propriedade intelectual.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        4.2 Você concorda em não reproduzir, distribuir, modificar, criar trabalhos derivados ou explorar de qualquer outra forma qualquer parte do website ou dos materiais nele contidos sem o consentimento expresso por escrito da Star Store.
+                    </p>
+
+                    <h2 class="subtitle-dialog">5. Limitação de Responsabilidade</h2>
+                    <p class="paragrafo-dialog">
+                        5.1 Em nenhuma circunstância a Star Store, seus diretores, funcionários, afiliados, agentes, contratados ou licenciadores serão responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais, consequenciais ou punitivos decorrentes do uso ou incapacidade de usar nosso website ou serviços, mesmo que tenham sido avisados da possibilidade de tais danos.
+                    </p>
+                    <h2 class="subtitle-dialog">6. Lei Aplicável e Jurisdição</h2>
+                    <p class="paragrafo-dialog">
+                        6.1 Estes Termos de Serviço serão regidos e interpretados de acordo com as leis do Brasil, sem levar em consideração os princípios de conflitos de leis.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        6.2 Qualquer disputa decorrente ou relacionada a estes Termos de Serviço será exclusivamente resolvida pelos tribunais competentes na cidade de São Paulo, Brasil.
+                    <h2 class="subtitle-dialog">7. Alterações nos Termos de Serviço</h2>
+                    </p>
+                    <p class="paragrafo-dialog">
+                        7.1 A Star Store reserva-se o direito de modificar ou atualizar estes Termos de Serviço a qualquer momento, sem aviso prévio. Quaisquer alterações entrarão em vigor imediatamente após a publicação dos termos revisados em nosso website.
+                    </p>
+                    <p class="paragrafo-dialog">
+                        Ao continuar a acessar ou usar nosso website após quaisquer alterações nos Termos de Serviço, você concorda em ficar vinculado pelos termos revisados. Recomendamos que você revise periodicamente os Termos de Serviço para estar ciente de quaisquer alterações.
+                    </p>
+                  </section>
+                </p>
+                <button class="ok2">OK!</button>
+              </dialog>
+              <button class="link3">Perguntas Frequentes</button>
+              <dialog id="link3">
+                <h2 class="title-dialog">Perguntas Frequentes</h2>
+                <p>
+                  <section>
+                    <h2 class="subtitle-dialog">1. Como faço para fazer uma compra?</h2>
+                    <p class="paragrafo-dialog">Para fazer uma compra na Star Store, basta navegar pelo nosso website, selecionar os produtos desejados e adicioná-los ao carrinho de compras. Em seguida, siga as instruções para finalizar o pedido e escolha o método de pagamento preferido.</p>
+            
+                    <h2 class="subtitle-dialog">2. Qual é a política de devolução da Star Store?</h2>
+                    <p class="paragrafo-dialog">Nossa política de devolução permite que você devolva produtos não utilizados e não danificados dentro de um prazo específico após a compra. Consulte nossa página de Política de Devolução para obter mais detalhes e instruções sobre como iniciar o processo de devolução.</p>
+            
+                    <h2 class="subtitle-dialog">3. Como posso entrar em contato com o suporte ao cliente?</h2>
+                    <p class="paragrafo-dialog">Você pode entrar em contato com o suporte ao cliente da Star Store por telefone, e-mail ou chat ao vivo. Visite nossa página de Contato para obter informações detalhadas sobre como nos contatar.</p>
+            
+                    <h2 class="subtitle-dialog">4. Quais métodos de pagamento são aceitos?</h2>
+                    <p class="paragrafo-dialog">A Star Store aceita uma variedade de métodos de pagamento, incluindo cartões de crédito, débito, PayPal e transferência bancária. Ao finalizar o pedido, você poderá escolher o método de pagamento preferido.</p>
+            
+                    <h2 class="subtitle-dialog">5. Como faço para rastrear meu pedido?</h2>
+                    <p class="paragrafo-dialog">Após fazer uma compra na Star Store, você receberá um e-mail de confirmação contendo detalhes do pedido, incluindo um número de rastreamento, se aplicável. Você pode usar esse número para rastrear o status do seu pedido através do nosso website ou do serviço de entrega.</p>
+                </section>
+                </p>
+                <button class="ok3">OK!</button>
+              </dialog>
+            </ul>
+          </section>
+        <section id="contact-info">
+          <h2 class="animate-h2">Informações para Contato</h2>
+          <p>Telefone: (19) 98973-1191</p>
+          <p>E-mail: star.store.oficial@gmail.com</p>
+          <p>Instagram: @star.store.oficial</p>
+        </section>
+      </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+          <h4>Maneiras de entrar em contato</h4>
+          <div class="links">
+              <a href="https://www.instagram.com/star.store.oficial/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="mailto:leo.taboorda@gmail.com" target="_blank" title="Enviar e-mail"><i class="fa fa-envelope-o"></i></a>
+              <a href="suporte.html#contact" target="_blank" title="Suporte da Loja"><i class="fa fa-user-o"></i></a>
+              <a href="https://github.com/leotaborda" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+          </div>
+          <p>Aproveite a loja e volte sempre que precisar inovar o look.</p>
+      </div>
+  </footer>
+  <!-- fim footer -->
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/suporte.js"></script>
+</body>
+</html>

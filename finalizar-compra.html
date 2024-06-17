@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="css/finalizarcompra.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finalizar Compra</h1>
+
+        <div id="produtos">
+            <h2>Produtos Selecionados</h2>
+            <ul id="lista-produtos">
+                <!-- Os produtos serão adicionados aqui -->
+            </ul>
+        </div>
+
+        <div id="cupom">
+            <h2>Inserir Cupom</h2>
+            <input type="text" id="cupom-input" placeholder="Digite seu cupom">
+            <button id="aplicar-cupom-btn">Aplicar</button>
+        </div>
+
+        <div id="endereco">
+            <h2>Endereço de Entrega</h2>
+            <form id="endereco-form">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required><br>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required><br>
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required><br>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required><br>
+            </form>
+        </div>
+
+        <div id="total">
+            <h2>Total da Compra</h2>
+            <p id="total-compra">R$ 0,00</p>
+        </div>
+
+        <div id="cancelar">
+            <h2>Cancelar Compra</h2>
+            <button id="confirmar-cancelar-btn">Cancelar Compra</button>
+        </div>
+
+        <div id="confirmar-cancelar" style="display: none;">
+            <p>Deseja realmente cancelar a compra?</p>
+            <button id="cancelar-compra-btn">Sim</button>
+            <button id="fechar-confirmacao-btn">Não</button>
+        </div>
+    </div>
+
+    <script src="js/finalizar-compra.js"></script>
+</body>
+</html>

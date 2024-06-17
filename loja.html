@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loja.css">
+    <title>Loja</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Star<span>Store</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="info.html">Informações</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="img/carrinho.png" alt="Carrinho" id="cart-icon">
+                <span id="cart-count" class="cart-count">0</span>
+                <img src="img/menu.png" alt="" class="menu-bottom">
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-l">
+                    <h2>Sinta a Magia da Nova Coleção!</h2>
+                    <p>
+                        Prepare-se para se encantar com a nossa mais recente coleção de roupas, onde cada peça é uma obra-prima de estilo e sofisticação. 
+                        Dos cortes elegantes aos detalhes meticulosos, cada item foi cuidadosamente selecionado para elevar o seu guarda-roupa a novos patamares de moda. 
+                        Deixe-se envolver pela magia da nossa nova coleção e descubra um mundo de possibilidades para expressar a sua verdadeira essência através da moda!
+                    </p>
+                    <button>Ver mais &#8594;</button>
+                </div>
+                <div class="header-bottom-side-r">
+                    <img src="img/banner2_loja.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="Camisas SS/3.1.png" alt="">
+                    <img src="Camisas SS/5.1.png" alt="">
+                    <img src="Camisas SS/6.1.png" alt="">
+                </div>
+            </div>
+        </div>  
+        <!-- PRODUTOS -->
+        <div>
+            <div class="page-inner-content">
+                <h3 class="section-title">Produto Nike</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="Nike/Nike1.jfif" alt="" onclick="openModal()">
+                        <p class="product-name">Camiseta Nike Air Preta</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike2.jfif" alt="">
+                        <p class="product-name">Camiseta Nike Básica</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike3.jfif" alt="">
+                        <p class="product-name">Camiseta Nike Casual</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike4.jfif" alt="">
+                        <p class="product-name">Camiseta Air Jordan</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike7.jfif" alt="">
+                        <p class="product-name">Camiseta Nike NY</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike8.jfif" alt="">
+                        <p class="product-name">Camiseta Nike Esportiva</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike9.jfif" alt="">
+                        <p class="product-name">Camiseta Nike Cruz</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Nike/Nike5.jpeg" alt="">
+                        <p class="product-name">Camiseta Nike Academia</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button role="button" class="button-name">Ver todos</button>
+                </div>
+                <h3 class="section-title">Produto Adidas</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="Adidas/adidas1.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Casual</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas2.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Listra Verde</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas3.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas New</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas4.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Beje</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas5.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Branca</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas6.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Red Flower</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas7.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Pist</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Adidas/adidas8.jpeg" alt="">
+                        <p class="product-name">Camiseta Adidas Basic</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button role="button" class="button-name">Ver todos</button>
+                </div>
+                <h3 class="section-title">Produto Fila</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="Fila/fila1.jfif" alt="">
+                        <p class="product-name">Camiseta Fila Tenis</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila2.jfif" alt="">
+                        <p class="product-name">Moletom Fila</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila3.jpeg" alt="">
+                        <p class="product-name">Camiseta Fila Sport</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila4.jpeg" alt="">
+                        <p class="product-name">Camiseta Fila Basic W</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila5.jfif" alt="">
+                        <p class="product-name">Camiseta Fila T</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila6.jfif" alt="">
+                        <p class="product-name">Camiseta Fila Basic P</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila7.jfif" alt="">
+                        <p class="product-name">Camiseta Fila Veludo</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Fila/fila8.jfif" alt="">
+                        <p class="product-name">Camiseta Fila Casual</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button role="button" class="button-name">Ver todos</button>
+                </div>
+                <h3 class="section-title">Produto Puma</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="Puma/puma1.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma Vers</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma9.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma Verão</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma3.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma ESD</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma4.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma Sport</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma5.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma Real</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma6.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma 1990</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma7.jpeg" alt="">
+                        <p class="product-name">Camiseta Puma Modal</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                    <div class="product">
+                        <img src="Puma/puma8.jpeg   " alt="">
+                        <p class="product-name">Camiseta Puma Esportiva</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">75,99 <span>BRL</span></p>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button role="button" class="button-name">Ver todos</button>
+                </div>
+            </div>
+        </div>
+        <div class="espacamento"></div>
+        <!-- PRODUTOS -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2 class="logo">Star<span>Store</span></h2>
+                    <p>Loja de roupa com as melhores<br> tendências e estilos para você.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Redes Sociais</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 StarStore | Todos os direitos reservados.
+            </div>
+        </footer>
+        <!-- FOOTER FIM -->
+
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Meu Carrinho</h2>
+                <div class="separar"></div>
+                <div id="cart-items"></div>
+                <h2 class="valor-final">Valor Total: <span id="total-price">0</span></h2>
+                <div class="cart-actions">
+                    <button id="checkout-button" class="button-finalizar">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal()">&times;</button>
+                <div class="product-modal-info">
+                    <img id="modal-product-img" src="" alt="Nome do Produto">
+                    <h2 id="modal-product-name">Nome do Produto</h2>
+                    <p id="modal-product-price" class="product-price">R$ 99,99</p>
+                </div>
+                <section class="comments">
+                    <h3>Comentários</h3>
+                    <ul class="comment-list">
+                    </ul>
+                    <form id="comment-form">
+                        <!-- Campos do formulário -->
+                        <div class="card">
+                            <span class="title">Comentários</span>  
+                            <div class="text-box">
+                              <div class="box-container">
+                                <textarea placeholder="Escreva"></textarea>
+                                <div>
+                                  <div class="formatting">
+                                    <button type="button">
+                                      <svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M5 6C5 4.58579 5 3.87868 5.43934 3.43934C5.87868 3 6.58579 3 8 3H12.5789C15.0206 3 17 5.01472 17 7.5C17 9.98528 15.0206 12 12.5789 12H5V6Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M12.4286 12H13.6667C16.0599 12 18 14.0147 18 16.5C18 18.9853 16.0599 21 13.6667 21H8C6.58579 21 5.87868 21 5.43934 20.5607C5 20.1213 5 19.4142 5 18V12"></path>
+                                      </svg>
+                                    </button>
+                                    <button type="button">
+                                      <svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M12 4H19"></path>
+                                        <path stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M8 20L16 4"></path>
+                                        <path stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M5 20H12"></path>
+                                      </svg>
+                                    </button>
+                                    <button type="button">
+                                      <svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M5.5 3V11.5C5.5 15.0899 8.41015 18 12 18C15.5899 18 18.5 15.0899 18.5 11.5V3"></path>
+                                        <path stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M3 21H21"></path>
+                                      </svg>
+                                    </button>
+                                    <button type="button">
+                                      <svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M4 12H20"></path>
+                                      <path stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M17.5 7.66667C17.5 5.08934 15.0376 3 12 3C8.96243 3 6.5 5.08934 6.5 7.66667C6.5 8.15279 6.55336 8.59783 6.6668 9M6 16.3333C6 18.9107 8.68629 21 12 21C15.3137 21 18 19.6667 18 16.3333C18 13.9404 16.9693 12.5782 14.9079 12"></path>
+                                      </svg>
+                                    </button>
+                                    <button type="button">
+                                      <svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                          <circle stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" r="10" cy="12" cx="12"></circle>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#707277" d="M8 15C8.91212 16.2144 10.3643 17 12 17C13.6357 17 15.0879 16.2144 16 15"></path>
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#707277" d="M8.00897 9L8 9M16 9L15.991 9"></path>
+                          </svg>
+                                    </button>
+                                    <button type="submit" class="send" title="Send">
+                                      <svg fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#ffffff" d="M12 5L12 20"></path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#ffffff" d="M7 9L11.2929 4.70711C11.6262 4.37377 11.7929 4.20711 12 4.20711C12.2071 4.20711 12.3738 4.37377 12.7071 4.70711L17 9"></path>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+                    <h3>Avaliação</h3>
+                    <ul class="comment-list">
+                    </ul>
+                    <form id="comment-form">
+                        <!-- Campos Avaliação -->
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text"
+                              ><svg
+                                viewBox="0 0 576 512"
+                                height="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="star-solid"
+                              >
+                                <path
+                                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path></svg>
+                            </label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text"
+                              ><svg
+                                viewBox="0 0 576 512"
+                                height="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="star-solid"
+                              >
+                                <path
+                                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path></svg>
+                            </label>
+                            <input checked="" type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text"
+                              ><svg
+                                viewBox="0 0 576 512"
+                                height="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="star-solid"
+                              >
+                                <path
+                                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path></svg>
+                            </label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text"
+                              ><svg
+                                viewBox="0 0 576 512"
+                                height="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="star-solid"
+                              >
+                                <path
+                                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path></svg>
+                            </label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text"
+                              ><svg
+                                viewBox="0 0 576 512"
+                                height="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="star-solid"
+                              >
+                                <path
+                                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path></svg>
+                            </label>
+                          </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/loja.js"></script>
+</body>
+</html>

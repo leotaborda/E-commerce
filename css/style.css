@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section, 
+footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: black;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: rgba(231, 152, 5, 0.979);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: rgb(209, 68, 3);
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid rgb(116, 5, 5);
+    }
+    to{
+        outline: 11px solid transparent
+    }
+}
+
+.btn2{
+    background-color: rgb(243, 162, 11);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 25%;
+    height: 5%;
+    text-align: center;
+}
+
+.btn2.animate-btn{
+    animation: animate-outline2 1s ease-out infinite;
+}
+
+.btn2:hover{
+    background-color: rgba(145, 19, 19, 0.979);
+}
+
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.lgn.animate-lgn{
+    animation: swing 1s ease-in-out infinite alternate;
+}
+
+.ul .lgn{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@keyframes swing {
+    from { transform: rotateZ(-5deg); }
+    to { transform: rotateZ(5deg); }
+  }
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li a{
+    color: aliceblue;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav li a::after{
+    content: "";
+    background-color: rgb(167, 32, 32);
+    height: 2px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav li a:hover::after{
+    width: 100%;
+}
+
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    display: block;
+    justify-content: center;  
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 1 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/* faca mais */
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-item{
+    background-color: rgb(238, 213, 123);
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid rgb(217, 134, 10);
+}
+
+.depoimentos .card-item .estrelas i{
+    color: rgb(217, 134, 10);
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+
+}
+
+.depoimentos .card-item:hover{
+    background-color: rgb(195, 98, 2);
+    margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: white;
+}
+
+.clientes h3,
+.clientes p{
+    text-align: center;
+}
+
+.clientes .container div{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.footer{
+    background-color: coral;
+    text-align: center;
+}
+
+.footer i{
+    color: darkorange;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+.footer h4{
+    margin-top: 0px;
+    color: white;
+}
+
+/* sobre */
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: black;
+}
+
+.sobre .sobre-img{
+    width: 50%;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* fim sobre */
+/* responsivo */
+
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(141, 5, 5);
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul li a{
+        margin: 10 0px;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 84px;
+        right: 37px;
+    }
+    .banner .banner-text h1{
+        transition: 0.3s;
+        font-size: 75px;
+    }
+    .banner .banner-text p{
+        transition: 0.3s;
+        font-size: 19px;
+    }
+    .faca-mais .faca-mais-text h3{
+        transition: 0.3s;
+        font-size: 35px;
+    }
+    .faca-mais .faca-mais-text p{
+        transition: 0.3s;
+        font-size: 15px;
+    }
+}
+@media(max-width: 1230px){
+    .clientes img{
+        width: 200px;
+        height: 100px;
+    }
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+    .depoimentos .card-item img{
+        border-radius: 100%;
+        width: 50px;
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .depoimentos .card-item .nome-user{
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom:  5px;
+        transition: 0.3s;
+    }
+    
+    .depoimentos .card-item .depoimento-user{
+        font-size: 12px;
+        padding: 0 15px;
+        transition: 0.3s;
+    }
+    
+    .depoimentos .card-item .estrelas{
+        margin: 15px 0;
+        border-top: 2px solid rgb(217, 134, 10);
+    }
+    .depoimentos .card-item .estrelas i{
+        color: rgb(217, 134, 10);
+        margin-top: 10px;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+}
+@media(max-width: 570px){
+    .banner .banner-text h1{
+        transition: 0.3s;
+        font-size: 55px;
+    }
+    .banner .banner-text p{
+        transition: 0.3s;
+        font-size: 10px;
+    }
+    .faca-mais .faca-mais-text h3{
+        transition: 0.3s;
+        font-size: 15px;
+    }
+    .faca-mais .faca-mais-text p{
+        transition: 0.3s;
+        font-size: 7px;
+    }
+    .faca-mais .faca-mais-text .btn2{
+        font-size: 5px;
+        align-items: center;
+        height: 5px;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .btn{
+        font-size: 10px;
+
+    }
+    .clientes img{
+        width: 50px;
+        height: 25px;
+    }
+}
+@media(max-width: 760px){
+    .depoimentos .card-item img{
+        border-radius: 100%;
+        width: 50px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .depoimentos .card-item .nome-user{
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom:  5px;
+        transition: 0.3s;
+    }
+
+    .depoimentos .card-item .depoimento-user{
+        font-size: 7px;
+        padding: 0 15px;
+        transition: 0.3s;
+    }
+
+    .depoimentos .card-item .estrelas{
+        margin: 15px 0;
+        border-top: 2px solid rgb(217, 134, 10);
+    }
+    .depoimentos .card-item .estrelas i{
+        color: rgb(217, 134, 10);
+        margin-top: 5px;
+        font-size: 10px;
+        transition: 0.3s;
+    }
+    .clientes img{
+        width: 150px;
+        height: 75px;
+    }
+}
